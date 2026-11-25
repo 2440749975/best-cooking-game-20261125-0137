@@ -1,3 +1,7 @@
+/*
+ * This entry packages RUSH KITCHEN for the make.fun best cooking game bounty.
+ * Players have 90 seconds to fill as many burger orders as they can.
+ */
 // A working best-game-01 entry (Node 22, standard library only): the game is this directory's
 // game/ folder, plain static files a desktop browser loads offline (game/index.html and its ES
 // modules, no library and no network request), and the program hands it in. It copies game/ and
@@ -17,6 +21,10 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildDossier } from './vendor/makefun-game.ts';
 
+const entryMetadata = {
+  title: 'RUSH KITCHEN',
+  bountySlug: 'best-cooking-game-20261125-0137',
+};
 const here = fileURLToPath(new URL('.', import.meta.url));
 const out = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
